@@ -1,10 +1,7 @@
-import 'package:legis/models/capitulo.dart';
 import 'package:legis/models/lei_element.dart';
-import 'package:legis/models/titulo.dart';
 
 class Lei {
   List<LeiElement> elementos;
-
   int numero;
   DateTime dataPublicacao;
   DateTime dataVigurar;

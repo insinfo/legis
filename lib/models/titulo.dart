@@ -1,17 +1,22 @@
-class Titulo {
-  String label = '';
-  String conteudo = '';
-  Titulo({this.label = '', this.conteudo = ''});
+import 'package:legis/models/lei_element.dart';
 
-  factory Titulo.fromMap(Map<String, dynamic> map) => Titulo(
-        label: map['label'],
-        conteudo: map['conteudo'],
-      );
+class Titulo extends LeiElement {
+  Titulo({
+    String label,
+    String conteudo,
+    int numero,
+    String tagName,
+  }) : super(
+          label: label,
+          conteudo: conteudo,
+          numero: numero,
+          tagName: tagName,
+        );
 
+  Titulo.fromMap(Map<String, dynamic> map) : super.fromMap(map);
+
+  @override
   Map<String, dynamic> toMap() {
-    var map = <String, dynamic>{};
-    map['label'] = label;
-    map['conteudo'] = conteudo;
-    return map;
+    return super.toMap();
   }
 }
