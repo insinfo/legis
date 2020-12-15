@@ -1,8 +1,10 @@
-import 'package:legis/models/lei_element.dart';
+import 'package:legis/src/shared/models/lei_element.dart';
 //PARÁGRAFO: É o desdobramento de um artigo, pode ser uma condição, exceção ou esclarecimento.
 //O símbolo do parágrafo - §
 
-class Paragrafo extends LeiElement {
+class Paragrafo extends LegisElement {
+  @override
+  String tagName = 'Paragrafo';
   //§ 1º || Parágrafo Único -
   Paragrafo({
     String label,

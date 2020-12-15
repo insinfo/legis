@@ -1,8 +1,11 @@
-import 'package:legis/models/lei_element.dart';
+import 'package:legis/src/shared/models/lei_element.dart';
 
 ///ALÍNEA: As alíneas são representadas letras minúsculas,
 ///um artigo pode conter alíneas, sem depender de incisos ou parágrafos.
-class Alinea extends LeiElement {
+class Alinea extends LegisElement {
+  @override
+  String tagName = 'Alinea';
+
   // label; // a) b) c) ...
   Alinea({
     String label,

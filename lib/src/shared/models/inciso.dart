@@ -1,8 +1,11 @@
-import 'package:legis/models/lei_element.dart';
+import 'package:legis/src/shared/models/lei_element.dart';
 
 ///INCISO: Inciso é representado por números romanos.
 ///Ex:  I, XI, também é considerado um desdobramento, mas encontra-se em um nível inferior ao parágrafo.
-class Inciso extends LeiElement {
+class Inciso extends LegisElement {
+  @override
+  String tagName = 'Inciso';
+
 //I,II,III,IV,XI
   Inciso({
     String label,
@@ -17,6 +20,11 @@ class Inciso extends LeiElement {
         );
 
   Inciso.fromMap(Map<String, dynamic> map) : super.fromMap(map);
+
+  @override
+  Inciso fromMap(Map<String, dynamic> map) {
+    return super.fromMap(map);
+  }
 
   @override
   Map<String, dynamic> toMap() {

@@ -1,7 +1,10 @@
-import 'package:legis/models/lei_element.dart';
+import 'package:legis/src/shared/models/lei_element.dart';
 
-class Titulo extends LeiElement {
-  Titulo({
+class SubTitulo extends LegisElement {
+  @override
+  String tagName = 'SubTitulo';
+
+  SubTitulo({
     String label,
     String conteudo,
     int numero,
@@ -13,7 +16,7 @@ class Titulo extends LeiElement {
           tagName: tagName,
         );
 
-  Titulo.fromMap(Map<String, dynamic> map) : super.fromMap(map);
+  SubTitulo.fromMap(Map<String, dynamic> map) : super.fromMap(map);
 
   @override
   Map<String, dynamic> toMap() {

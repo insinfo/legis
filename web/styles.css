@@ -2,11 +2,52 @@
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
 body {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 5vw;
+ /* max-width: 600px;*/
+  margin: 0 ;
+  padding: 0;
+  height: 100%;
 }
 
 * {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
+
+/************************** SCROLLBAR ************************/
+
+::-webkit-scrollbar {
+  background: rgba(255, 127, 80, 0);
+  overflow: visible;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7c7c7c;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 91, 91, 0.8);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background-color: #7c7c7c;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+}
+
+::-webkit-scrollbar-thumb:vertical {
+}
+
+::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/************************** /SCROLLBAR ************************/

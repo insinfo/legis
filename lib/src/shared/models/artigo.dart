@@ -1,9 +1,9 @@
-import 'package:legis/models/lei_element.dart';
+import 'package:legis/src/shared/models/lei_element.dart';
 
 ///ARTIGOS: É o fundamento principal da lei. Toda LEI possui no mínimo um artigo.
 ///CAPUT: É o enunciado do artigo
 /// Art. 206. Prescreve: // artigo
-class Artigo extends LeiElement {
+class Artigo extends LegisElement {
   // artigo -> parágrafos -> incisos -> alíneas
   //Art. 206 //Art. 1º
   //caput

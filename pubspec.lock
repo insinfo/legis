@@ -316,8 +316,15 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.4"
-  intl:
+  idb_shim:
     dependency: transitive
+    description:
+      name: idb_shim
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.12.2+1"
+  intl:
+    dependency: "direct main"
     description:
       name: intl
       url: "https://pub.dartlang.org"
@@ -471,7 +478,7 @@ packages:
     source: hosted
     version: "1.30.0"
   sass_builder:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: sass_builder
       url: "https://pub.dartlang.org"
@@ -484,6 +491,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.4+2"
+  sembast:
+    dependency: transitive
+    description:
+      name: sembast
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.4.8"
+  sembast_web:
+    dependency: "direct main"
+    description:
+      name: sembast_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   shelf:
     dependency: transitive
     description:
@@ -568,6 +589,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  synchronized:
+    dependency: transitive
+    description:
+      name: synchronized
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.0+2"
   term_glyph:
     dependency: transitive
     description:

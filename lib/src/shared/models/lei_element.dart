@@ -1,23 +1,35 @@
-class LeiElement {
-  List<LeiElement> elementos;
+class LegisElement {
+  int id;
+  List<LegisElement> elementos;
   String label;
   int numero;
   String conteudo;
   String tagName;
-  LeiElement({
+
+  LegisElement({
     this.label,
     this.conteudo,
     this.numero,
     this.tagName,
   });
 
-  LeiElement.fromMap(Map<String, dynamic> map) {
+  LegisElement.fromMap(Map<String, dynamic> map) {
+    fillFromMap(map);
+  }
+
+  LegisElement fromMap(Map<String, dynamic> map) {
+    var lei = LegisElement();
+    lei.fillFromMap(map);
+    return lei;
+  }
+
+  void fillFromMap(Map<String, dynamic> map) {
     label = map['label'];
     conteudo = map['conteudo'];
     numero = map['numero'];
     tagName = map['tagName'];
     if (map.containsKey('elementos')) {
-      elementos = map['tagName'].map((a) => LeiElement.fromMap(a)).toList();
+      elementos = map['elementos'].map((a) => LegisElement.fromMap(a)).toList();
     }
   }
 
