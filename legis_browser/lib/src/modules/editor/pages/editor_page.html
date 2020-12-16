@@ -1,0 +1,10 @@
+<div class="container">
+   <toolbar [lei]="lei"></toolbar>
+    <main class="stage">
+        <article class="page">
+            <div *ngIf="lei != null">           
+                <editable-item [element]="el" *ngFor="let el of lei.elementos" ></editable-item>
+            </div>
+        </article>
+    </main>
+</div>

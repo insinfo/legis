@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: white;
+    position: fixed;
+}
+
+
+
+.stage{   
+    width: calc(100vw - 249px);
+    height: calc(100vh - 60px);     
+    background-color: #adb3bf;
+    overflow: auto;
+    overflow-y: scroll;
+    .page{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        width: 80%;
+        min-width: 500px;
+        min-height: 890px;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+    
+}

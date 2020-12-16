@@ -1,0 +1,39 @@
+:host{
+    font-family: Calibri,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-size: 15px;
+}
+
+.item {
+    padding: 5px;
+    border: solid 2px white;
+}
+
+.ementa-conteudo{
+    font-size: 20px;
+    margin: 20px;
+    margin-left: 20%;
+    text-transform: none;
+}
+.preambulo-conteudo{
+    margin-bottom: 20px;
+}
+.artigo-label{
+    background-color: #d9534f;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+.artigo-conteudo{   
+    text-align: justify;
+}
+
+.hover{
+    border: solid #d9534f 2px;
+}

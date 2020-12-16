@@ -1,0 +1,21 @@
+<h1 #ementa *ngIf="isEmenta" class="ementa-conteudo item" (dblclick)="ondblClickForEdit()" 
+(mouseenter)="onMouseEnterHandle(ementa)" (mouseleave)="onMouseLeaveHandle(ementa)" >    
+    <span [contenteditable]="isEditando == true ? 'true' : 'false'" [ngModel]="element.conteudo"
+        (blur)="onBlurExitEdit()"></span>
+</h1>
+
+<p #preambulo *ngIf="isPreambulo" class="preambulo-conteudo item" (dblclick)="ondblClickForEdit()"
+(mouseenter)="onMouseEnterHandle(preambulo)" (mouseleave)="onMouseLeaveHandle(preambulo)" >
+    <span [contenteditable]="isEditando == true ? 'true' : 'false'" [ngModel]="element.conteudo"
+        (blur)="onBlurExitEdit()"></span>
+</p>
+
+<p #artigo *ngIf="isArtigo" class="artigo-conteudo item" (dblclick)="ondblClickForEdit()"
+(mouseenter)="onMouseEnterHandle(artigo)" (mouseleave)="onMouseLeaveHandle(artigo)" >
+    <span class="artigo-label">{{element.label}}</span>   
+    <span [contenteditable]="isEditando == true ? 'true' : 'false'" [ngModel]="element.conteudo" (blur)="onBlurExitEdit()"></span>
+</p>
+
+<div *ngIf="isEpigrafe">
+    <editable-epigrafe [epigrafe]="element"></editable-epigrafe>
+</div>
