@@ -232,6 +232,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.14.2"
+  crossplat_objectid:
+    dependency: "direct main"
+    description:
+      name: crossplat_objectid
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.4"
   crypto:
     dependency: transitive
     description:
@@ -351,6 +358,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.1.1"
+  legis_core:
+    dependency: "direct main"
+    description:
+      path: "../legis_core"
+      relative: true
+    source: path
+    version: "1.0.0"
   logging:
     dependency: transitive
     description:
@@ -645,6 +659,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
+  uuid:
+    dependency: "direct main"
+    description:
+      name: uuid
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.2.2"
   vm_service:
     dependency: transitive
     description:

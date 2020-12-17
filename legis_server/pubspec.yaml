@@ -1,0 +1,20 @@
+name: legis_server
+description: An empty Aqueduct application.
+version: 0.0.1
+author: stable|kernel <jobs@stablekernel.com>
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+  aqueduct: 3.3.0+1
+  mongo_dart: ^0.4.4
+  uuid: ^2.2.2
+  crossplat_objectid: ^2.1.4  
+
+  legis_core:
+    path: ../legis_core
+
+dev_dependencies:
+  test: ^1.0.0
+  aqueduct_test: ^1.0.0

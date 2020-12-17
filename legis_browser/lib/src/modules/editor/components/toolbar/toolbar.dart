@@ -5,14 +5,9 @@ import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
 import 'package:legis/src/modules/editor/components/editable_epigrafe/editable_epigrafe.dart';
 import 'package:legis/src/shared/directives/contenteditable_directive.dart';
-import 'package:legis/src/shared/models/alinea.dart';
-import 'package:legis/src/shared/models/artigo.dart';
-import 'package:legis/src/shared/models/ementa.dart';
-import 'package:legis/src/shared/models/epigrafe.dart';
-import 'package:legis/src/shared/models/lei.dart';
-import 'package:legis/src/shared/models/lei_element.dart';
-import 'package:legis/src/shared/models/paragrafo.dart';
-import 'package:legis/src/shared/repositories/repository_base.dart';
+import 'package:legis/src/shared/repositories/browser_repository.dart';
+import 'package:legis_core/legis_core.dart';
+
 import 'dart:html' as html;
 
 @Component(
@@ -30,7 +25,7 @@ import 'dart:html' as html;
     ],
     exports: [])
 class ToolbarComponent implements OnDestroy, AfterViewInit {
-  final RepositoryBase repositoryBase;
+  final BrowserRepository repositoryBase;
 
   StreamSubscription globalKeyPress;
 

@@ -1,8 +1,8 @@
 import 'package:angular/angular.dart';
 import 'package:angular_forms/angular_forms.dart';
 import 'package:angular_router/angular_router.dart';
-import 'package:legis/src/shared/models/epigrafe.dart';
-import 'package:legis/src/shared/repositories/repository_base.dart';
+import 'package:legis/src/shared/repositories/browser_repository.dart';
+import 'package:legis_core/legis_core.dart';
 
 @Component(
   selector: 'editable-epigrafe',
@@ -17,7 +17,7 @@ import 'package:legis/src/shared/repositories/repository_base.dart';
   ],
 )
 class EditableEpigrafeComponent {
-  final RepositoryBase repositoryBase;
+  final BrowserRepository repositoryBase;
 
   @Input('epigrafe')
   Epigrafe epigrafe;

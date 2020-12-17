@@ -2,13 +2,8 @@ import 'dart:async';
 
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
-import 'package:legis/src/shared/models/artigo.dart';
-import 'package:legis/src/shared/models/assinatura.dart';
-import 'package:legis/src/shared/models/ementa.dart';
-import 'package:legis/src/shared/models/epigrafe.dart';
-import 'package:legis/src/shared/models/lei.dart';
-import 'package:legis/src/shared/models/preambulo.dart';
-import 'package:legis/src/shared/repositories/repository_base.dart';
+import 'package:legis/src/shared/repositories/browser_repository.dart';
+import 'package:legis_core/legis_core.dart';
 
 @Component(
   selector: 'home',
@@ -27,7 +22,7 @@ import 'package:legis/src/shared/repositories/repository_base.dart';
   ],
 )
 class HomePage implements OnInit, AfterContentInit {
-  final RepositoryBase repositoryBase;
+  final BrowserRepository repositoryBase;
 
   List<Lei> leis;
 
