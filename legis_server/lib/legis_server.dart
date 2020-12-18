@@ -6,6 +6,6 @@ library legis_server;
 export 'dart:async';
 export 'dart:io';
 
-export 'package:aqueduct/aqueduct.dart';
-
-export 'channel.dart';
+export 'boot_angel.dart';
+export 'db_config.dart';
+export 'db_connect.dart';

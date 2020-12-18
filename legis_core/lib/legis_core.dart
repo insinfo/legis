@@ -19,3 +19,11 @@ export 'models/secao.dart';
 export 'models/sub_titulo.dart';
 export 'models/tipo_lei.dart';
 export 'models/titulo.dart';
+
+export 'utils/utils.dart';
+export 'utils/status_code.dart';
+export 'utils/status_message.dart';
+
+export 'repositories/filtro.dart';
+export 'repositories/filtros.dart';
+export 'repositories/irepository.dart';

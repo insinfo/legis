@@ -1,0 +1,26 @@
+FROM google/dart:2.10 as legis_server
+WORKDIR /app
+ADD pubspec.* /app/
+RUN pub get --no-precompile
+ADD . /app
+RUN pub get --offline
+RUN cp .env.example.linux .env
+#RUN dart compile kernel -o bin/prod.dill bin/prod.dart
+
+FROM subfuzion/dart:slim as legis_server-jit
+COPY --from=legis_server /usr/lib/dart/bin/dart /usr/lib/dart/bin/dart
+COPY --from=legis_server /usr/lib/dart/lib/_internal/dartdev.dill /usr/lib/dart/lib/_internal/
+COPY --from=legis_server /root/.pub-cache /root/.pub-cache
+COPY --from=legis_server /app /app
+COPY --from=legis_server /app/.env /.env
+#COPY --from=legis_server /app/.env /app/bin/.env 
+#COPY --from=legis_server /app/.env /usr/lib/dart/bin/.env 
+ENV dbhost=localhost
+EXPOSE 3150
+#--disable-dart-dev
+ENTRYPOINT ["/usr/lib/dart/bin/dart","run","/app/bin/prod.dart", "-p", "3150", "-a" ,"0.0.0.0","--dbhost=$dbhost"]
+# docker build -f Dockerfile_jit -t legis_server-jit .
+# executa a imagem
+# docker run -e "dbhost=192.168.133.13" -d --name legis_server-jit -p 3150:3150 legis_server-jit   
+# docker run -e "dbhost=192.168.133.13" -i --name legis_server-jit -p 3150:3150 legis_server-jit   
+# docker run --rm -e "dbhost=192.168.133.13" -i --name legis_server-jit -p 3150:3150 legis_server-jit

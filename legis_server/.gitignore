@@ -15,3 +15,4 @@ Dart_Packages.xml
 .dart_tool/
 pubspec.lock
 .dart_tool
+.env

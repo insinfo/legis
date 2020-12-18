@@ -1,4 +1,4 @@
-import 'harness/app.dart';
+/*import 'harness/app.dart';
 
 Future main() async {
   final harness = Harness()..install();
@@ -8,3 +8,4 @@ Future main() async {
         body: {"_id": "5fdbb17580520b66b7a12473", "id": 50, "name": "Isaque"});
   });
 }
+*/

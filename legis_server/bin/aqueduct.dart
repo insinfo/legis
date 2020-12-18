@@ -1,4 +1,4 @@
-import 'package:legis_server/legis_server.dart';
+/*import 'package:legis_server/legis_server.dart';
 
 Future main() async {
   final app = Application<LegisServerChannel>()
@@ -10,4 +10,4 @@ Future main() async {
 
   print("Application started on port: ${app.options.port}.");
   print("Use Ctrl-C (SIGINT) to stop running the application.");
-}
+}*/

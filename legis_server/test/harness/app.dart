@@ -1,4 +1,4 @@
-import 'package:legis_server/legis_server.dart';
+/*import 'package:legis_server/legis_server.dart';
 import 'package:aqueduct_test/aqueduct_test.dart';
 
 export 'package:legis_server/legis_server.dart';
@@ -30,3 +30,4 @@ class Harness extends TestHarness<LegisServerChannel> {
 
   }
 }
+*/
